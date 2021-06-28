@@ -12,8 +12,8 @@ class ShowUserProfileController {
       const user = this.showUserProfileUseCase.execute({ user_id });
 
       return response.json(user);
-    } catch (message) {
-      return response.status(404).json({ error: message });
+    } catch (error) {
+      return response.status(404).json({ error: error.message });
     }
   }
 }

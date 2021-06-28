@@ -11,7 +11,7 @@
   "paths": {
     "/users": {
       "post": {
-        "tags": ["User"],
+        "tags": ["Users"],
         "summary": "Create a user",
         "description": "Create a new user",
         "requestBody": {
@@ -72,7 +72,7 @@
         }
       },
       "get": {
-        "tags": ["User"],
+        "tags": ["Users"],
         "summary": "List all users",
         "description": "List all users",
         "parameters": [
@@ -126,7 +126,7 @@
     },
     "/users/{user_id}": {
       "get": {
-        "tags": ["User"],
+        "tags": ["Users"],
         "summary": "Get user",
         "description": "Get user by id",
         "parameters": [
@@ -177,7 +177,7 @@
     },
     "/users/{user_id}/admin": {
       "patch": {
-        "tags": ["User"],
+        "tags": ["Users"],
         "summary": "Turn user admin",
         "description": "Turn user admin",
         "parameters": [
